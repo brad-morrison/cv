@@ -4,6 +4,11 @@
 		<title>CV - Bradley Morrison</title>
 		<!-- css style-->
 		<style>
+			* {
+				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+				box-sizing: border-box;
+			}
+			
 			img {
 				float:left;
 				max-width:100%;
@@ -15,7 +20,7 @@
 
 			div {
 				align-content: center;
-				background-color: white;
+				background-color: rgb(221, 221, 221);
 				max-width: 100%;
 			}
 
@@ -24,12 +29,17 @@
 				justify-content: space-evenly;
 				grid-template-columns: 30% 70%;
 				grid-template-rows: 600px 300px;
-				background-color: #2196F3;
+				background-color: rgb(238, 238, 238);
 				grid-gap: 40px;
 				padding: 10px 40px;
 				max-width: 80%;
 				align-content: center;
 			}
+
+			.grid_item {
+				background-color: rgb(170, 170, 170);
+			}
+
 		</style>
 	</head>
 	<!-------------------->
@@ -38,11 +48,20 @@
 		<div class="wrapper">
 			<!--grid-->
 			<div>
-				
 				<div class="grid-container">
 					<div class="grid-item">
 						<div>
 						<img src="https://cdn2.iconfinder.com/data/icons/avatar-face/96/avatar35-512.png" style="width: 100%">
+						</div>
+						<div style="margin-left: 10px">
+							<h1>Bradley Morrison</h1>
+							<h2>Software Developer</h2>
+							<ul>
+								<li>Location - Dundee</li>
+								<li>DOB - 17/03/1992</li>
+								<li>Phone - 07398721477</li>
+								<li>email - bradley_morrison@outlook.com</li>
+							</ul>
 						</div>
 					</div>
 					<div class="grid-item">2</div>
