@@ -16,28 +16,39 @@
 			
 			.wrapper {
 				width: 100%;
+				
 			}
 
 			div {
 				align-content: center;
-				background-color: rgb(221, 221, 221);
 				max-width: 100%;
 			}
 
 			.grid-container {
 				display:grid;
-				justify-content: space-evenly;
+				justify-content: center;
+				justify-items: center;
 				grid-template-columns: 30% 70%;
 				grid-template-rows: 600px 300px;
 				background-color: rgb(238, 238, 238);
 				grid-gap: 40px;
-				padding: 10px 40px;
-				max-width: 80%;
+				padding: 40px 40px;
 				align-content: center;
+				border-style: dotted;
+				border-width: 5px;
+				
 			}
 
-			.grid_item {
-				background-color: rgb(170, 170, 170);
+			.content {
+				margin: 10px;
+				
+			}
+
+			.grid-item {
+				background-color: rgb(184, 90, 90);
+				border-style: dotted;
+				border-width: 5px;
+				
 			}
 
 		</style>
@@ -53,7 +64,7 @@
 						<div>
 						<img src="https://cdn2.iconfinder.com/data/icons/avatar-face/96/avatar35-512.png" style="width: 100%">
 						</div>
-						<div style="margin-left: 10px">
+						<div class="content">
 							<h1>Bradley Morrison</h1>
 							<h2>Software Developer</h2>
 							<ul>
@@ -64,7 +75,17 @@
 							</ul>
 						</div>
 					</div>
-					<div class="grid-item">2</div>
+					<div class="grid-item">
+						<div class="content">
+							<h2>Personal Summary</h2>
+							<hr>
+							<p>
+								A talented, driven and enthusiastic software developer with a proven record of going above and beyond expectations, using a passion for all aspects of software to produce impressive applications with a unique creative flair. A proven ability of developing projects from inception through production to final delivery; ensuring that all work is effective, appropriate and delivered within agreed timescales. Entrepreneurially minded, enjoys exploring innovative ideas and has extensive experience of self-motivating. Works well independently and thrives in a team environment, always eager to share skills/knowledge while being open to learn.
+								<br></br>
+								Recently graduated with an honours degree in computing and looking to begin an exciting career as a software developer with an ambitious and inspiring company. Determined to work in a stimulating environment that requires the use of advanced technical skills while encouraging passion and creative flair.
+							</p>
+						</div>
+					</div>
 					<div class="grid-item">3</div>
 					<div class="grid-item">4</div>
 				</div>
