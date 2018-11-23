@@ -14,6 +14,7 @@
         h1 {
             font-size: 25px;
             color:rgb(119, 119, 119);
+            padding: 10px 0;
         }
 
         .h1-name {
@@ -28,12 +29,34 @@
         }
 
         h3 {
-            font-size: 15px;
+            font-size: 16px;
             color:rgb(139, 139, 139);
         }
 
         p {
             margin: 18px 0;
+        }
+
+        ul {
+            list-style-type: " - ";
+            text-align: left;
+            padding:0;
+        }
+
+        
+
+        .inline {
+            width:50%;
+            padding-right: 5px;
+            float: left;
+        }
+
+        .inline-right {
+            width:50%;
+            padding-right: 5px;
+            float: left;
+            border-left: 1px solid rgb(226, 226, 226); 
+            padding-left: 20px
         }
 
         .page {
@@ -76,6 +99,12 @@
             width: 95%;
         }
 
+        .hr-mobile {
+            border:0;
+            border-top:0px solid rgb(226, 226, 226);
+            width: 95%;
+        }
+
         .text-over-image {
             position: absolute;
             padding: 0 16px;
@@ -111,6 +140,10 @@
             padding: 0.15px 20px 20px;
         }
 
+        .inner-box-right {
+            padding: 1px 30px 30px;
+        }
+
         .grid {
             padding: 0 8px;
         }
@@ -120,6 +153,24 @@
         [class*="col-"] {
             width: 100%;
         }
+
+        .inline {
+            width: 100%;
+        }
+
+        .inline-right {
+            width: 100%;
+            border-left: 0px;
+            padding-left: 0;
+        }
+
+        .hr-mobile {
+            border:0;
+            border-top:1px solid rgb(226, 226, 226);
+            width: 95%;
+            padding: 5px;
+        }
+
         }
 
     </style>
@@ -142,10 +193,10 @@
                         </div>
                     </div>
                     <div class="inner-box">
-                        <p>Developer</p>
-                        <p>Dundee, UK</p>
-                        <p>bradley_morrison@outlook.com</p>
-                        <p>07398721477</p>
+                        <h3>Developer</h3>
+                        <h3>Dundee, UK</h3>
+                        <h3>bradley_morrison@outlook.com</h3>
+                        <h3>07398721477</h3>
                         <hr>
                         <h1>Areas of Expertise</h1>
                         <h2>Languages</h2>
@@ -203,14 +254,96 @@
                     </div>
                 </div>
                 <div class="box" style="height: 100px;"></div>
-                <div class="box" style="height: 300px;"></div>
-                <div class="box" style="height: 200px;"></div>
             </div>
         </div>
         <!--RIGHT COLUMN-->
         <div class="col-8" >
+            <!--BOXES-->
             <div class="row">
-                    <div class="box" style="min-height: 800px;"></div>
+                    <!--PERSONAL SUMMARY-->
+                    <div class="box">
+                        <div class="inner-box-right">
+                                <h1>Personal Summary</h1>
+                                <p>
+                                A talented, driven and enthusiastic software developer with a proven record of going above and beyond expectations, using a passion for all aspects of software to produce impressive applications with a unique creative flair. A proven ability of developing projects from inception through production to final delivery; ensuring that all work is effective, appropriate and delivered within agreed timescales. Entrepreneurially minded, enjoys exploring innovative ideas and has extensive experience of self-motivating. Works well independently and thrives in a team environment, always eager to share skills/knowledge while being open to learn.
+                                <br><br>
+                                Recently graduated with an honours degree in computing and looking to begin an exciting career as a software developer with an ambitious and inspiring company. Determined to work in a stimulating environment that requires the use of advanced technical skills while encouraging passion and creative flair.
+                                </p>
+                        </div>
+                     </div>
+                     <!--EDUCATION-->
+                     <div class="box">
+                         <div class="inner-box-right">
+                            <h1>Academic Qualifications</h1>
+                            <br>
+                            <h2>BSc (Hons) Computing and IT Practice</h2>
+                            <h3>The Open University</h3>
+                            <h3>2016 - 2018</h3>
+                            <hr>
+                            <h2>HND Computer Software Development</h2>
+                            <h3>Dundee and Angus College</h3>
+                            <h3>2014 - 2016</h3>
+                            <hr>
+                            <h2>5 Highers | 3 Intermediate 2's | 8 Standard Grades</h2>
+                            <h3>Bell Baxter High School</h3>
+                            <h3>2004 - 2010</h3>
+                         </div>
+                     </div>
+                     <!--WORK EXPERIENCE-->
+                     <div class="box col-12" style="margin-bottom: 0;">
+                        <div class="inner-box-right" style="padding: 0 20px;">
+                            <h1>Work Experience</h1>
+                            <div class="inline">
+                                <h3>Tiger Moon Interactive Limited</h3>
+                                <h2>Software Developer/Owner</h2>
+                                <h3>June 2014 - August 2018</h3>
+                                <p>
+                                        Formed a limited company with a University colleague to develop interactive 
+                                        software, websites and games. While studying for our Degree, we produced work 
+                                        for multiple clients while also creating our own interactive products.
+                                </p>
+                                <h3>Duties:</h3>
+                                <ul>
+                                    <li>Responsible for daily running of company (sales, taxes etc).</li>
+                                    <li>Designing and developing successful websites for clients.</li>
+                                    <li>Designing and developing multiple games for iOS.</li>
+                                    <li>Communicating with clients and prospective customers.</li>
+                                    <li>Creating original art assets and graphical content.</li>
+                                    <li>Acquiring investment and crowdfunding campaigns.</li>
+                                    <li>Creating and performing pitches/presentations to clients and tech fairs.</li>
+                                    <li>Marketing and promoting developed products.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="inline-right">
+                                <hr class="hr-mobile">
+                                <h3>Siblings Reunited (STAR)</h3>
+                                <h2>Volunteer</h2>
+                                <h3>Jan 2013 - Ongoing</h3>
+                                <p>
+                                        I regularly volunteer for a local childrens charity, performing and maintaining 
+                                        multiple technical aspects of their charity operations.
+                                </p>
+                                <h3>Duties:</h3>
+                                <ul>
+                                    <li>Helped design and solely created the charities website.</li>
+                                    <li>Maintain the website on a regular basis, adding and removing content as needed.</li>
+                                    <li>Developed a stand-alone booking software which is in constant use by the charity owner.</li>
+                                    <li>Developed a stand-alone booking software which is in constant use by the charity owner.</li>
+                                    <li>Graphical designing of multiple print assets (leaflets, posters, signage).</li>
+                                    <li>Regular technical advice and support.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="box col-6" style="shadow">
+                        <div>ff</div>
+                    </div>
+                    <div class="box col-6">
+                        <div>ff</div>
+                    </div>
+                    -->
             </div>
         </div>
     </div>
