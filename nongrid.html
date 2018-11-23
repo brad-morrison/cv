@@ -151,6 +151,23 @@
             padding: 0 8px;
         }
 
+        .footer-container {
+            background-color: #f55b7c;
+            margin:0;
+            margin-top:20px;
+            padding:0;
+            width: 100%;
+            float: left;
+            min-height: 200px;
+        }
+
+        .footer-content {
+            text-align: center;
+            color: white;
+        }
+
+        
+
         /* resize for mobile*/
         @media only screen and (max-width: 768px) {
         [class*="col-"] {
@@ -174,13 +191,17 @@
             padding: 5px;
         }
 
+        .grid {
+            min-width: 400px !important;
+        }
+
         }
 
     </style>
 </head>
 <!---->
-<body style="background-color: #f1f1f1;">
-    <div class="page" style="max-width:1400px; padding: 0 8px;">
+<body style="background-color: #f1f1f1; margin-left: 0; margin-right: 0;">
+    <div class="page" style="max-width:1400px;">
     <!--GRID-->
     <div class="grid">
         <!--LEFT COLUMN-->
@@ -190,7 +211,7 @@
                 <div class="box">
                     <!--IMAGE-->
                     <div class="display-container">
-                        <img src="image.jpg" style="width: 100%">
+                        <img src="face.jpg" style="width: 100%;" alt="bradley morrison">
                         <div class="text-over-image">
                             <h1 class="h1-name">Bradley Morrison</h1>
                         </div>
@@ -198,7 +219,7 @@
                     <div class="inner-box">
                         <h3>Developer</h3>
                         <h3>Dundee, UK</h3>
-                        <h3>bradley_morrison@outlook.com</h3>
+                        <h3 style="overflow-wrap: break-word; hyphens:auto">bradley_morrison&shy;@outlook.com</h3>
                         <h3>07398721477</h3>
                         <hr>
                         <h1>Areas of Expertise</h1>
@@ -267,6 +288,27 @@
                         <p>Great communication and social skills</p>
                     </div>
                 </div>
+                <!--HOBBIES-->
+                <div class="box">
+                    <div class="inner-box">
+                        <h1>Hobbies</h1>
+                        <p> Programming has been a constant interest and hobby of mine throughout my life, 
+                            I'm always working on some personal coding project. <br><br>I am also interested in music 
+                            and play multiple instruments, mainly guitar and piano. <br><br> I also enjoy art, particularly 
+                            portrait sketching. I also enjoy an active lifestyle, mainly running and swimming as 
+                            well as going for long walks with my dogs.
+                        </p>
+                    </div>
+                </div>
+                <!--REFERENCES-->
+                <div class="box">
+                        <div class="inner-box">
+                            <h1>References</h1>
+                            <p> Available on request.</p>
+                            <p> email: bradley_morrison@outlook.com</p>
+                            <p> mobile: 07398721477</p>
+                        </div>
+                    </div>
             </div>
         </div>
         <!--RIGHT COLUMN-->
@@ -278,9 +320,18 @@
                         <div class="inner-box-right">
                                 <h1>Personal Summary</h1>
                                 <p>
-                                A talented, driven and enthusiastic software developer with a proven record of going above and beyond expectations, using a passion for all aspects of software to produce impressive applications with a unique creative flair. A proven ability of developing projects from inception through production to final delivery; ensuring that all work is effective, appropriate and delivered within agreed timescales. Entrepreneurially minded, enjoys exploring innovative ideas and has extensive experience of self-motivating. Works well independently and thrives in a team environment, always eager to share skills/knowledge while being open to learn.
+                                A talented, driven and enthusiastic software developer with a proven record of going above 
+                                and beyond expectations, using a passion for all aspects of software to produce impressive 
+                                applications with a unique creative flair. A proven ability of developing projects from 
+                                inception through production to final delivery; ensuring that all work is effective, appropriate 
+                                and delivered within agreed timescales. Entrepreneurially minded, enjoys exploring innovative ideas 
+                                and has extensive experience of self-motivating. Works well independently and thrives in a team 
+                                environment, always eager to share skills/knowledge while being open to learn.
                                 <br><br>
-                                Recently graduated with an honours degree in computing and looking to begin an exciting career as a software developer with an ambitious and inspiring company. Determined to work in a stimulating environment that requires the use of advanced technical skills while encouraging passion and creative flair.
+                                Recently graduated with an honours degree in computing and looking to begin an exciting 
+                                career as a software developer with an ambitious and inspiring company. Determined to 
+                                work in a stimulating environment that requires the use of advanced technical skills while
+                                 encouraging passion and creative flair.
                                 </p>
                         </div>
                      </div>
@@ -378,7 +429,16 @@
             </div>
         </div>
     </div>
+    
     </div>
+    <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <h3 style="color: white">Bradley Morrison - CV</h3>
+                    <p>&copy; Bradley Morrison, 2018 </p>
+                </div>
+                
+            </div>
+    </footer>
 </body>
-
 </html>
