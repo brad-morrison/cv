@@ -11,6 +11,17 @@
     <script src="main.js"></script>
     <style>
 
+        /*
+            good colours:
+
+            #f55b7c - pinky orange
+
+
+        */
+        :root {
+            --color-scheme: #f55b7c;
+        }
+
         * {
             box-sizing: border-box;
             font-size: 16px;
@@ -53,6 +64,12 @@
             padding-left: 20px;
         }
 
+        .ul-big li {
+            list-style-type: disc;
+            padding-left: 20px;
+            line-height: 2;
+        }
+
         .inline {
             width:50%;
             padding-right: 5px;
@@ -63,7 +80,7 @@
             width:50%;
             padding-right: 5px;
             float: left;
-            border-left: 1px solid rgb(226, 226, 226); 
+            border-left: 1px dashed rgb(226, 226, 226);
             padding-left: 20px
         }
 
@@ -127,7 +144,7 @@
         }
 
         .loading-bar {
-            background-color: #f55b7c;
+            background-color: var(--color-scheme);
             border-radius: 16px;
             text-align: center;
             color:white;
@@ -157,7 +174,7 @@
         }
 
         .footer-container {
-            background-color: #f55b7c;
+            background-color: var(--color-scheme);
             margin:0;
             margin-top:20px;
             padding:0;
@@ -169,6 +186,29 @@
         .footer-content {
             text-align: center;
             color: white;
+        }
+
+        .hr-list {
+            border:0;
+            border-top:1px solid rgb(226, 226, 226);
+            width: 80%;
+            border-style:dashed;
+        }
+
+        .listed-text {
+            font-style: italic;
+            font-size: 16px;
+            color: rgb(58, 58, 58);
+        }
+
+        .bordered-text {
+            background-color: var(--color-scheme);
+            padding: 6px 12px;
+            border-radius: 12px;
+            color: #f1f1f1;
+            width: 100%;
+            overflow-wrap: break-word; 
+            hyphens:auto;
         }
 
         /* resize for mobile*/
@@ -202,14 +242,14 @@
 
         .icons {
             padding-right: 12px;
-            font-size: 20px;
-            color:#f55b7c;
+            font-size: 22px;
+            color:var(--color-scheme);
         }
 
         .icons-large {
             padding-right: 12px;
             font-size: 25px;
-            color:#f55b7c;
+            color:var(--color-scheme);
         }
 
     </style>
@@ -232,13 +272,13 @@
                         </div>
                     </div>
                     <div class="inner-box">
-                        <h3><i class="icons fas fa-suitcase"></i>Developer</h3>
-                        <h3><i class="icons fas fa-location-arrow"></i>Dundee, UK</h3>
-                        <div>
-                        <h3><i class="icons fas fa-envelope" style="float: left;"></i></h3>
-                        <h3 style="overflow-wrap: break-word; hyphens:auto">bradley_morrison&shy;@outlook.com</h3>
+                        <h3 style ="font-size: 20px;"><i class="icons fas fa-suitcase"style=""></i>Developer</h3>
+                        <h3 style ="font-size: 20px"><i class="icons fas fa-location-arrow"></i>Dundee, UK</h3>
+                        <div style="vertical-align: middle;">
+                        <h3><i class="icons fas fa-envelope" style="float: left; font-size: 23px"></i></h3>
+                        <h3 style="overflow-wrap: break-word; hyphens:auto; font-size: 20px">bradley_morrison&shy;@outlook.com</h3>
                         </div>
-                        <h3><i class="icons fas fa-phone" style="float: left;"></i>07398721477</h3>
+                        <h3 style="font-size: 20px;"><i class="icons fas fa-phone" style="float: left; font-size: 23px"></i>07398721477</h3>
                         <hr>
                         <h1><i class="icons-large fas fa-star-of-life"></i>Areas of Expertise</h1>
                         <h2>Languages</h2>
@@ -299,11 +339,11 @@
                 <div class="box">
                     <div class="inner-box">
                         <h1><i class="icons-large fas fa-male"></i>Personal Skills</h1>
-                        <p>Highly creative & motivated</p>
-                        <p>Problem solving</p>
-                        <p>Attention to detail</p>
-                        <p>Takes pride in all aspects of work and development</p>
-                        <p>Great communication and social skills</p>
+                        <p style ="font-style: italic">Highly creative & motivated</p>
+                        <p style ="font-style: italic">Problem solving</p>
+                        <p style ="font-style: italic">Attention to detail</p>
+                        <p style ="font-style: italic">Takes pride in all aspects of work and development</p>
+                        <p style ="font-style: italic">Great communication and social skills</p>
                     </div>
                 </div>
                 <!--HOBBIES-->
@@ -322,8 +362,8 @@
                 <div class="box">
                         <div class="inner-box">
                             <h1><i class="icons-large fas fa-file-alt"></i>References</h1>
-                            <p> Available on request.</p>
-                            <p> email: bradley_morrison@outlook.com</p>
+                            <p style ="font-style: italic"> Available on request.</p>
+                            <h3> email: <span class="bordered-text">bradley_morrison@outlook.com</span></h3>
                         </div>
                     </div>
             </div>
@@ -357,18 +397,24 @@
                          <div class="inner-box-right">
                             <h1><i class="icons-large fas fa-graduation-cap"></i>Academic Qualifications</h1>
                             <br>
-                            <h2>BSc (Hons) Computing and IT Practice</h2>
-                            <h3>The Open University</h3>
-                            <h3 style="color:#f55b7c"><i class="icons fas fa-calendar-alt"></i>2016 - 2018</h3>
+                            <div style="border-left: 5px solid var(--color-scheme); padding-left: 20px">
+                                <h2>BSc (Hons) Computing and IT Practice</h2>
+                                <h3>The Open University</h3>
+                                <h3 style="color:var(--color-scheme)"><i class="icons fas fa-calendar-alt"></i>2016 - 2018</h3>
+                            </div>
                             <hr>
-                            <h2>HND Computer Software Development</h2>
-                            <h3>Dundee and Angus College</h3>
-                            <h3 style="color:#f55b7c"><i class="icons fas fa-calendar-alt"></i>2013 - 2015</h3>
+                            <div style="border-left: 5px solid var(--color-scheme); padding-left: 20px">
+                                <h2>HND Computer Software Development</h2>
+                                <h3>Dundee and Angus College</h3>
+                                <h3 style="color:var(--color-scheme)"><i class="icons fas fa-calendar-alt"></i>2013 - 2015</h3>
+                            </div>
                             <hr>
-                            <h2>5 Highers | 3 Intermediate 2's | 8 Standard Grades</h2>
-                            <h3>Bell Baxter High School</h3>
-                            <h3 style="color:#f55b7c"><i class="icons fas fa-calendar-alt"></i>2004 - 2010</h3>
-                         </div>
+                            <div style="border-left: 5px solid var(--color-scheme); padding-left: 20px">
+                                <h2>5 Highers | 3 Intermediate 2's | 8 Standard Grades</h2>
+                                <h3>Bell Baxter High School</h3>
+                                <h3 style="color:#var(--color-scheme)"><i class="icons fas fa-calendar-alt"></i>2004 - 2010</h3>
+                            </div>
+                        </div>
                      </div>
                      <!--WORK EXPERIENCE-->
                      <div class="box col-12">
@@ -377,7 +423,7 @@
                             <div class="inline">
                                 <h3>Tiger Moon Interactive Limited</h3>
                                 <h2>Software Developer/Owner</h2>
-                                <h3 style="color:#f55b7c"><i class="icons fas fa-calendar-alt"></i>June 2014 - August 2018</h3>
+                                <h3 style="color:var(--color-scheme)"><i class="icons fas fa-calendar-alt"></i>June 2014 - August 2018</h3>
                                 <p>
                                         Formed a limited company with a University colleague to develop interactive 
                                         software, websites and games. While studying for our Degree, we produced work 
@@ -385,14 +431,14 @@
                                 </p>
                                 <h3>Duties:</h3>
                                 <div>
-                                    <p>Responsible for daily running of company (sales, taxes etc).</p><hr>
-                                    <p>Designing and developing successful websites for clients.</p><hr>
-                                    <p>Designing and developing multiple games for iOS.</p><hr>
-                                    <p>Communicating with clients and prospective customers.</p><hr>
-                                    <p>Creating original art assets and graphical content.</p><hr>
-                                    <p>Acquiring investment and crowdfunding campaigns.</p><hr>
-                                    <p>Creating and performing pitches/presentations to clients and tech fairs.</p><hr>
-                                    <p>Marketing and promoting developed products.</p><hr>
+                                    <p class="listed-text">Responsible for daily running of company (sales, taxes etc).</p><hr class="hr-list">
+                                    <p class="listed-text">Designing and developing successful websites for clients.</p><hr class="hr-list">
+                                    <p class="listed-text">Designing and developing multiple games for iOS.</p><hr class="hr-list">
+                                    <p class="listed-text">Communicating with clients and prospective customers.</p><hr class="hr-list">
+                                    <p class="listed-text">Creating original art assets and graphical content.</p><hr class="hr-list">
+                                    <p class="listed-text">Acquiring investment and crowdfunding campaigns.</p><hr class="hr-list">
+                                    <p class="listed-text">Creating and performing pitches/presentations to clients and tech fairs.</p><hr class="hr-list">
+                                    <p class="listed-text">Marketing and promoting developed products.</p><hr class="hr-list">
                                     <br>
                                 </div>
                             </div>
@@ -401,19 +447,19 @@
                                 <hr class="hr-mobile">
                                 <h3>Siblings Reunited (STAR)</h3>
                                 <h2>Volunteer</h2>
-                                <h3 style="color:#f55b7c"><i class="icons fas fa-calendar-alt"></i>Jan 2013 - Ongoing</h3>
+                                <h3 style="color:var(--color-scheme)"><i class="icons fas fa-calendar-alt"></i>Jan 2013 - Ongoing</h3>
                                 <p>
                                         I regularly volunteer for a local childrens charity, performing and maintaining 
                                         multiple technical aspects of their charity operations.
                                 </p>
                                 <h3>Duties:</h3>
                                 <div>
-                                    <p>Helped design and solely created the charities website.</p><hr>
-                                    <p>Maintain the website on a regular basis, adding and removing content as needed.</p><hr>
-                                    <p>Developed a stand-alone booking software which is in constant use by the charity owner.</p><hr>
-                                    <p>Developed a stand-alone booking software which is in constant use by the charity owner.</p><hr>
-                                    <p>Graphical designing of multiple print assets (leaflets, posters, signage).</p><hr>
-                                    <p>Regular technical advice and support.</p><hr>
+                                    <p class="listed-text">Helped design and solely created the charities website.</p><hr class="hr-list">
+                                    <p class="listed-text">Maintain the website on a regular basis, adding and removing content as needed.</p><hr class="hr-list">
+                                    <p class="listed-text">Developed a stand-alone booking software which is in constant use by the charity owner.</p><hr class="hr-list">
+                                    <p class="listed-text">Developed a stand-alone booking software which is in constant use by the charity owner.</p><hr class="hr-list">
+                                    <p class="listed-text">Graphical designing of multiple print assets (leaflets, posters, signage).</p><hr class="hr-list">
+                                    <p class="listed-text">Regular technical advice and support.</p><hr class="hr-list">
                                     <br>
                                 </div>
                             </div>
